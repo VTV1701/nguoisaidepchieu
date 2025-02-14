@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Chúng tớ là nhóm 5</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: lavender;
+            color: purple;
+            padding: 20px;
+            text-align: center;
+            width: 100%; 
+        }
+        #banner {
+            position: relative;
+            margin: 20px 0;
+            background: url("https://lh3.googleusercontent.com/p/AF1QipPaD4kSS39Ntvxt6IQ7eF7a0G8MK6BRwXaCkbBx=s1360-w1360-h1020") no-repeat center;
+            background-size: cover; 
+            padding: 4rem 0; 
+            width: 100%; 
+            max-width: 800px; 
+            overflow: hidden; 
+        }
+        #banner::before {
+            content: ""; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); 
+            z-index: 1; 
+        }
+        #banner h1 {
+            position: relative; 
+            color: white;
+            z-index: 2; 
+            margin: 0;
+            font-size: 2.5em; 
+            text-align: center;
+        }
+        #header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            width: 100%; 
+            max-width: 800px; 
+            margin: 0 auto; 
+        }
+        #search {
+            margin: 10px 0;
+            width: 100%;
+            display: flex; 
+            justify-content: center; 
+        }
+        #search input {
+            padding: 10px; 
+            width: 250px; 
+            border: 1px solid #ccc;
+            border-radius: 5px; 
+        }
+        #slogan {
+            font-style: italic;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            text-align: center; 
+        }
+        .member-container {
+            display: flex;
+            justify-content: space-around; 
+            max-width: 1000px;
+            flex-wrap: nowrap; 
+            margin: 0 auto; 
+        }
+        .member {
+            background: #ffffff;
+            border: 2px solid #87cefa;  
+            border-radius: 10px;
+            margin: 10px; 
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            width: 220px; 
+        }
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #87cefa; 
+            margin-bottom: 10px;
+        }
+        .member:hover {
+            transform: scale(1.05);
+            border-color: #0095e8; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .text-container {
+            display: flex; 
+            align-items: flex-start; 
+            width: 100%;
+            max-width: 1000px; 
+            margin: 20px 0; 
+        }
+        #text-area {
+            flex: 1; 
+            padding: 20px;
+            border: 2px solid #87cefa;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            font-family: 'Times New Roman', serif; 
+            font-size: 18px; 
+            color: #333; 
+            margin-right: 20px; 
+        }
+        ins {
+            color: red; 
+            font-weight: bold; 
+        }
+        .image-container {
+            width: auto; 
+            background-color: #f0f0f0; 
+            border: 2px solid #87cefa; 
+            border-radius: 10px; 
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            overflow: hidden; 
+        }
+        .image-container img {
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 5px; 
+        }
+        .school-intro {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #87cefa;
+            border-radius: 10px;
+            background-color: #fff;
+            max-width: 800px;
+            text-align: center;
+        }
+        footer {
+            margin: 20px;
+            padding: 10px;
+            background-color: lavender;
+            color: purple;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>XIN GIỚI THIỆU VỚI MỌI NGƯỜI</h1>
+    <div id="header-content">
+        <div id="banner">
+            <h1>Chúng Tớ Là Nhóm 5</h1> 
+        </div>
+        <div id="slogan">ĐỘC LẬP - TỰ DO - HẠNH PHÚC</div>
+        <div id="search">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm theo thứ tự bảng chữ cái..." onkeyup="filterMembers()">
+        </div>
+    </div>
+</header>
+
+<div class="member-container">
+    <div class="member">
+        <a href="file:///C:/Users/lennovo/Downloads/10%20%C4%91i%E1%BB%83m%20tin%20let's%20gooo/V%C5%A9%20Ti%E1%BA%BFn%20Vinh.html" target="_blank">
+            <img src="c:\Users\lennovo\Downloads\Tiến Vinh.jpg" alt="Thành viên 1"> 
+        </a>
+        <h2>Vũ Tiến Vinh</h2>
+    </div>
+    
+    <div class="member">
+        <a href="file:///C:/Users/lennovo/Downloads/TR%C3%80%20MY.html" target="_blank">
+            <img src="c:\Users\lennovo\Downloads\Trà My.jpg" alt="Thành viên 2"> 
+        </a>
+        <h2>Trần Trà My</h2>
+    </div>
+    
+    <div class="member">
+        <a href="file:///C:/Users/lennovo/Downloads/10%20%C4%91i%E1%BB%83m%20tin%20let's%20gooo/Tr%E1%BA%A7n%20Th%E1%BA%A3o%20Nguy%C3%AAn.html" target="_blank">
+            <img src="c:\Users\lennovo\Downloads\Thảo Nguyên.jpg" alt="Thành viên 3"> 
+        </a>
+        <h2>Trần Thảo Nguyên</h2>
+    </div>
+    
+    <div class="member">
+        <a href="file:///C:/Users/lennovo/Downloads/10%20%C4%91i%E1%BB%83m%20tin%20let's%20gooo/Tr%E1%BA%A7n%20Th%E1%BB%8B%20Ph%C6%B0%C6%A1ng%20Anh.html" target="_blank">
+            <img src="c:\Users\lennovo\Downloads\Phương Anh.jpg" alt="Thành viên 4"> 
+        </a>
+        <h2>Trần Thị Phương Anh</h2>
+    </div>
+</div>
+
+<script>
+    function filterMembers() {
+        const input = document.getElementById('searchInput');
+        const filter = input.value.toLowerCase();
+        const memberCards = document.querySelectorAll('.member');
+
+        memberCards.forEach(member => {
+            const name = member.querySelector('h2').textContent.toLowerCase();
+            if (name.includes(filter)) {
+                member.style.display = ''; 
+            } else {
+                member.style.display = 'none'; 
+            }
+        });
+    }
+</script>
+
+<h1><strong>Lịch sử CSS </strong></h1>
+<div class="text-container">
+    <div id="text-area">
+        <p>CSS hay <ins>Cascading Style Sheet</ins> là ngôn ngữ dùng để tìm và định dạng các thẻ HTML được tạo ra với thiết kế đơn giản và sẽ sử dụng. Mục đích khi tạo ra CSS nhắm tới đó trình là đơn giản hóa việc thiết kế website từ đó định hình phong cách cho trang web và đa dạng hóa nội dung truyền tải tới người dùng. Ngoài ra bạn có thể tìm hiểu sâu hơn nữa thật chi tiết về CSS là gì? Tác dụng - Cách Dùng - Cách tối ưu CSS để có kiến thức chi tiết nhất về CSS.</p>
+        <p>CSS có thể chèn ảnh, chèn video, file audio và vô vàn các tính năng thú vị khác nữa.</p>
+    </div>
+    <div class="image-container">
+        <img src="c:\Users\lennovo\Downloads\css.jpg" alt="ảnh css">
+    </div>
+</div>
+
+<!-- Chèn Video -->
+
+    <iframe width="640" height="360" src="c:\Users\lennovo\Downloads\meo.mp4" frameborder="0" allowfullscreen></iframe>
+
+
+<!-- Chèn Audio -->
+<audio controls>
+    <source src="eyes-270938.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ audio.
+</audio>
+
+<!-- Ô Thẻ Giới Thiệu Trường Học -->
+<div class="school-intro">
+    <A href="file:///C:/Users/lennovo/Downloads/gi%E1%BB%9Bi%20thi%E1%BB%87u%20tr%C6%B0%E1%BB%9Dng.html"><h2>Đây là ngôi trường của chúng tớ</h2></A>
+    <p>Nơi cho chúng tôi chìa khóa vào đời</p>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy;2025 nhom5depchais1tg</p>
+</footer>
+
+</body>
+</html>

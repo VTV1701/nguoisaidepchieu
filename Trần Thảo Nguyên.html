@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Thành Viên</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lavender;
+        }
+
+        .banner {
+            position: relative; /* Set position to relative */
+            background: url("") no-repeat center;
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+            color: purple;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .banner a {
+            position: absolute; /* Position absolute for top left */
+            top: 20px; /* Distance from the top */
+            left: 20px; /* Distance from the left */
+            padding: 10px 20px;
+            background-color: violet;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .banner a:hover {
+            background-color: #007bb5;
+        }
+
+        .banner h1 {
+            margin: 0; /* Remove margin */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .member {
+            background: #ffffff;
+            border: 2px solid #87cefa;  
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px; /* Increased padding */
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 400px; /* Increased width */
+        }
+
+        .member:hover {
+            transform: scale(1.05);
+            border-color: #0095e8; 
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .member img {
+            width: 120px; /* Increased image size */
+            height: 120px; /* Increased image size */
+            border-radius: 50%;
+            border: 3px solid #87cefa; 
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        .member img:hover {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            margin: 10px 0;
+            color: #01010d;
+            font-size: 24px; /* Increased font size */
+        }
+
+        h3 {
+            margin: 20px 0; /* Tạo khoảng cách cho tiêu đề */
+            color: #01010d;
+            font-size: 22px; /* Kích thước font cho tiêu đề bài hát yêu thích */
+        }
+
+        p {
+            color: #555;
+            font-size: 18px; /* Increased font size */
+       
+        }
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+            background-color:#ffffff ;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table th, table td {
+            border: 1px solid #87cefa;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #87cefa;
+            color: white;
+        }
+
+        table td {
+            color: #333;
+        }
+
+        .detail {
+            text-align: center;
+        }
+
+        .detail img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    <a href="file:///C:/Users/lennovo/Downloads/TRANG%20CH%C3%8DNH.html">Quay Về Trang Chủ</a>
+    <h1>Chào Mừng Đến Với Nhóm Chúng Tôi</h1>
+</div>
+
+<div class="container">
+    <div class="member">
+        <a href="https://www.facebook.com/profile.php?id=100024641913275" target="_blank">
+            <img src="https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-1/474016779_1802480233916690_5251146342708581238_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=7yIoFZyOeW4Q7kNvgHq-Vhk&_nc_oc=Adh-p-dOqVKq1seEl61oU0C24X_WUgwOuEen1RaZs0tI-eVByehOG-clCFj2-F53OPg&_nc_zt=24&_nc_ht=scontent.fhan5-11.fna&_nc_gid=AJ1Yl4jElvqnl5zTlh5IY8e&oh=00_AYCuDHONyQYQ0FWjOANbHLuir0HYx0LqUivJNlqw0AIfCA&oe=67B52C18" alt="Thành viên 3">
+        </a>
+        <h2>Trần Thảo Nguyên</h2>
+        <p><b>Ngày sinh:</b> 28/2/2007 <br> <b>Sở thích:</b> Xem phim, lắp mô hình <br><b>Mục tiêu nghề nghiệp:</b> Công an, Ủy viên Bộ chính trị</p>
+    </div>
+
+    <table>
+        <tr>
+            <th>Thông Tin Thêm</th>
+            <th>Chi Tiết</th>
+        </tr>
+        <tr>
+            <td>Cung Hoàn Đạo</td>
+            <td>Song Ngư</td>
+        </tr>
+        <tr>
+            <td>Bài Hát Yêu Thích</td>
+            <td>
+                <div class="detail">
+                    <img src="https://i.ytimg.com/vi/lFxKzXW_64k/maxresdefault.jpg" alt="mot con vit">
+                    
+                    <p><a href="https://youtu.be/lFxKzXW_64k">Mot con vit</a></p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td> Bộ Phim Yêu Thích </td>
+            <td>
+                <div class="detail">
+                    <img src="c:\Users\lennovo\Downloads\bé trùm.png" alt="phim">
+                    <p>Boss Baby</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+   
+</div>
+
+</body>
+</html>

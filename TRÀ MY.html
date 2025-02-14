@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Thành Viên</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lavender;
+        }
+
+        .banner {
+            background: url("") no-repeat center;
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+            color: purple;
+            text-align: center !important;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .banner a {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: violet;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .banner a:hover {
+            background-color: #007bb5;
+        }
+
+        .banner h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .member {
+            background: #ffffff;
+            border: 2px solid #87cefa;  
+            border-radius: 10px;
+            margin: 20px 0;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            width: 400px;
+        }
+
+        .member:hover {
+            transform: scale(1.05);
+            border-color: #0095e8; 
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #87cefa; 
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        .member img:hover {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            margin: 10px 0;
+            color: #01010d;
+            font-size: 24px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        table {
+            margin: 30px auto;
+            margin-bottom: 30px;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table th, table td {
+            border: 1px solid #87cefa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #87cefa;
+            color: white;
+        }
+
+        table td {
+            color: #333;
+        }
+
+        .detail {
+            text-align: center;
+        }
+
+        .detail img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    <a href="file:///C:/Users/lennovo/Downloads/TRANG%20CH%C3%8DNH.html">Quay Về Trang Chủ</a>
+    <h1>Chào Mừng Đến Với Nhóm Chúng Tôi</h1>
+</div>
+
+<div class="container">
+    <div class="member">
+        <a href="https://www.facebook.com/profile.php?id=100069498070954" target="_blank">
+            <img src="https://scontent.fhan3-1.fna.fbcdn.net/v/t51.75761-15/465794415_18349822738192914_7071879315840688400_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFNhOqjEYaYk-zt3s-SLdqVzsdXtQsjqqPOx1e1CyOqo34swim-sQUZXwkU_dYJG3tYZIfqja8s6PHW534d4rPC&_nc_ohc=MjQnH5dJNdAQ7kNvgERRnIJ&_nc_oc=AdjwQXV0HKUgyqhxTlyj8Nv0kCPNZfjah5uOSZdFVuP2A_pTI4KWUHtLvH2hEZv8WksYCGUb1AmAz_uS2QA6qsXK&_nc_zt=23&_nc_ht=scontent.fhan3-1.fna&_nc_gid=A-X7unXqjhepAQMD3CS5-D-&oh=00_AYC2Fi-O4uQs-OuE7FL9wtVURW5TscETpCZxK0xm1KbiwA&oe=67AF5417" alt="Thành viên 2"> 
+        </a>
+        <h2>Trần Trà My</h2>
+        <p><b>Ngày sinh:</b> 4/5/2007 <br><b>Sở thích:</b> Chơi với trẻ em, nghe nhạc <br><b>Mục tiêu nghề nghiệp:</b> Giáo viên mầm non, nhận trẻ từ 18t</p>
+    </div>
+
+    <table>
+        <tr>
+            <th>Thông Tin Thêm</th>
+            <th>Chi Tiết</th>
+        </tr>
+        <tr>
+            <td>Cung Hoàn Đạo</td>
+            <td>Kim Ngưu</td>
+        </tr>
+        <tr>
+            <td>Bài Hát Yêu Thích</td>
+            <td>
+                <div class="detail">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w600_r1x1_jpeg/cover/1/6/1/d/161de9d6b8416b7f31e619d879c0cffd.jpg" alt="skibidi">
+                    <p><a href="https://youtu.be/i4qZmKSFYvI" target="_self"> Từng là </a></p>
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td> Bộ Phim Yêu Thích </td>
+            <td>
+                <div class="detail">
+                    <img src="c:\Users\lennovo\Downloads\pony.jfif" alt="phim">
+                    <p>My Little Pony Phần 6</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
