@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Thành Viên</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lavender;
+        }
+
+        .banner {
+            position: relative;
+            background: url("") no-repeat center;
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+            color: purple;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .banner a {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: violet;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .banner a:hover {
+            background-color: #007bb5;
+        }
+
+        .banner h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .member {
+            background: #ffffff;
+            border: 2px solid #87cefa;  
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px; 
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 400px; 
+        }
+
+        .member:hover {
+            transform: scale(1.05);
+            border-color: #0095e8; 
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .member img {
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%;
+            border: 3px solid #87cefa; 
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        .member img:hover {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            margin: 10px 0;
+            color: #01010d;
+            font-size: 24px; 
+        }
+
+        h3 {
+            margin: 20px 0; /* Tạo khoảng cách cho tiêu đề */
+            color: #01010d;
+            font-size: 22px; /* Kích thước font cho tiêu đề bài hát yêu thích */
+        }
+
+        p {
+            color: #555;
+            font-size: 18px; 
+        }
+
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table th, table td {
+            border: 1px solid #87cefa;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #87cefa;
+            color: white;
+        }
+
+        table td {
+            color: #333;
+        }
+
+        .detail {
+            text-align: center;
+        }
+
+        .detail img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    <a href="index.html">Quay Về Trang Chủ</a>
+    <h1>Chào Mừng Đến Với Nhóm Chúng Tôi</h1>
+</div>
+
+<div class="container">
+    <div class="member">
+        <a href="https://www.facebook.com/phuonganh.unicorn" target="_blank">
+            <img src="https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-1/465688008_1252925215918781_3883454020723178011_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=rWGfeHjPEyoQ7kNvgEyMXAN&_nc_oc=AdiMlEj5EsDj1kI3xBnwLudBNR5DP-L3777E1lJtvnvuQpDdaSRs1xoAlEI_g9hAZ00&_nc_zt=24&_nc_ht=scontent.fhan5-10.fna&_nc_gid=A7R3yr1t56s8qYYy9Ydichw&oh=00_AYB7VUND7BgiT6tNQrYUfbmK3c4Ud5cNYBM5IJDBohIINA&oe=67AE66F6" alt="Thành viên 4">
+        </a>
+        <h2>Trần Thị Phương Anh</h2>
+        <p><b>Ngày sinh:</b> 6/5/2007 <br> <b>Sở thích:</b> Du lịch, ăn ngon <br><b>Mục tiêu nghề nghiệp:</b> Kinh doanh bất động sản</p>
+    </div>
+
+    <table>
+        <tr>
+            <th>Thông Tin Thêm</th>
+            <th>Chi Tiết</th>
+        </tr>
+        <tr>
+            <td>Cung Hoàn Đạo</td>
+            <td>Kim Ngưu</td>
+        </tr>
+        <tr>
+            <td>Bài Hát Yêu Thích</td>
+            <td>
+                <div class="detail">
+                    <img src="chăm em.jfif " alt="skibidi">
+                    <p><a href="https://youtu.be/ZvbwY5qUYnc" target="_self"> Chăm em một đời</a></p>
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td> Bộ Phim Yêu Thích </td>
+            <td>
+                <div class="detail">
+                    <img src="yêu tinh.webp" alt="yêu tinh">
+                    <p> The Goblin </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
